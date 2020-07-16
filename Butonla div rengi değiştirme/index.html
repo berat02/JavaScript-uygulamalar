@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Java Script</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        div {
+            height: 100px;
+            width: 100px;
+        }
+        
+        .a {}
+        
+        .b {}
+        
+        .kirmizi {
+            background-color: red;
+        }
+        
+        .mavi {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="renk_degis()">Değiştir</button>
+
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="a"></div>
+
+
+    <script>
+        function renk_degis() {
+
+            var a_panel = document.getElementsByClassName("a");
+            var b_panel = document.getElementsByClassName("b");
+
+
+
+            for (var i = 0; i < a_panel.length; i++) {
+
+                var element = a_panel[i];
+                if (element.classList.contains("kirmizi")) {
+                    element.classList.remove("kirmizi");
+                    element.classList.add("mavi");
+                } else {
+                    element.classList.remove("mavi");
+                    element.classList.add("kirmizi");
+                }
+            }
+
+            for (var i = 0; i < b_panel.length; i++) {
+                var element = b_panel[i];
+                if (element.classList.contains("mavi")) {
+                    element.classList.remove("mavi");
+                    element.classList.add("kirmizi");
+                } else {
+                    element.classList.remove("kirmizi");
+                    element.classList.add("mavi");
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+
+body{
+    background-color: crimson;
+}
+.input-panel{
+    margin: 0px auto;
+    text-align: center;
+    line-height: 60px;
+    background-color: gray;
+    width: 300px;
+    height:250px;
+}
+input[type="number"]{
+    width: 205px;
+    height: 35px;
+}
+.buton{
+    width: 50px;
+    height: 35px;
+    cursor: pointer;
+}
+.buton:hover{
+    background-color: crimson;
+}

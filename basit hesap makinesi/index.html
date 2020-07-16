@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Java Script</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="input-panel">
+        <input type="number" placeholder="1. Sayı" id="sayi1">
+        <input type="number" placeholder="2. Sayı" id="sayi2">
+        <br>
+        <input class="buton" type="button" onclick="topla()" value="+">
+        <input class="buton" type="button" onclick="cikar()" value="-">
+        <input class="buton" type="button" onclick="carp()" value="*">
+        <input class="buton" type="button" onclick="bol()" value="/">
+        <input type="number" disabled placeholder="Sonuç" id="sonuc">
+    </div>
+    <script>
+        function topla() {
+            var sayi1 = Number(document.getElementById('sayi1').value);
+            var sayi2 = Number(document.getElementById('sayi2').value);
+            sonuc = sayi1 + sayi2;
+            document.getElementById('sonuc').value = sonuc;
+        }
+
+        function cikar() {
+            var sayi1 = Number(document.getElementById('sayi1').value);
+            var sayi2 = Number(document.getElementById('sayi2').value);
+            sonuc = sayi1 - sayi2;
+            document.getElementById('sonuc').value = sonuc;
+        }
+
+        function carp() {
+            var sayi1 = Number(document.getElementById('sayi1').value);
+            var sayi2 = Number(document.getElementById('sayi2').value);
+            sonuc = sayi1 * sayi2;
+            document.getElementById('sonuc').value = sonuc;
+        }
+
+        function bol() {
+            var sayi1 = Number(document.getElementById('sayi1').value);
+            var sayi2 = Number(document.getElementById('sayi2').value);
+            sonuc = sayi1 / sayi2;
+            document.getElementById('sonuc').value = sonuc;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Java Script</title>
+</head>
+
+<body>
+
+    <h1 id="uygulama"></h1>
+
+
+    <script>
+        var text = "";
+        for (i = 1; i <= 20; i++) {
+            if ((i % 2) == 0) {
+                text += 'Berat' + '<br>';
+            } else {
+                text += i + "<br>";
+            }
+            document.getElementById('uygulama').innerHTML = text;
+        }
+    </script>
+</body>
+
+</html>

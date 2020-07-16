@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS : While : JS</title>
+
+</head>
+
+<body>
+    <input type="button" value="while döngüsü" onclick="whiledongu()">
+    <p id="uygulama"></p>
+
+    <script>
+        function whiledongu() {
+            var number = "";
+            var i = 1;
+            while (i <= 10) {
+                number += "☻ Number: " + i + "<br>"
+                i++;
+            }
+            document.getElementById('uygulama').innerHTML = number;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+<style>
+    .butonlar {
+        width: 300px;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0px auto;
+    }
+    
+    .kutu {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(0, 134, 134);
+        margin-top: 10px;
+    }
+    
+    .kutu2 {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(155, 1, 78);
+        margin-top: 10px;
+    }
+    
+    #btn {
+        margin-left: 20px;
+    }
+</style>
+
+<body>
+    <div class="butonlar">
+        <input type="button" id="btn" onclick="div_olustur()" value="Div oluştur">
+        <div id="panel"></div>
+        <input type="button" id="btn2" onclick="div_olustur2()" value="Div oluştur">
+        <div id="panel2"></div>
+    </div>
+    <script>
+        function div_olustur() {
+            var div = document.createElement("div");
+            div.classList = "kutu";
+            panel.appendChild(div);
+        }
+
+        function div_olustur2() {
+            var div = document.createElement("div");
+            div.classList = ("kutu2");
+            panel.appendChild(div);
+        }
+    </script>
+</body>
+
+</html>

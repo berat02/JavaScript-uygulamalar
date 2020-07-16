@@ -1,0 +1,19 @@
+.input-panel{
+    margin: 0px auto;
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    line-height: 35px;
+}
+.input-panel input[type="button"]{
+    width: 100px;
+}
+.input-panel input[type="button"]:hover{
+    cursor: pointer;
+    transition: 0.8s;
+    width: 180px;
+}

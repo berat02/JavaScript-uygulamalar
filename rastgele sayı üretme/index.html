@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Java Script</title>
+</head>
+<body>
+    
+    <input type="button" onclick="sayi_uret()" value="sayı üret">
+    <p id="uret"></p>
+
+    <script>
+        function sayi_uret(){
+            document.getElementById('uret') .innerHTML = (Math.floor(Math.random()*100));
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Java Script</title>
+</head>
+<body>
+
+<h1 id="saat"></h1>
+<h1 id="tarih"></h1>
+
+    <script>
+         var d = new Date();
+         document.getElementById('saat').innerHTML= d.toLocaleTimeString();
+         document.getElementById('tarih').innerHTML= d.toLocaleDateString();
+    </script>
+</body>
+</html>

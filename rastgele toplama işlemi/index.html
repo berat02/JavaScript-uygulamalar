@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Java Script</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="p-panel">
+        <p id="sayi1"></p>
+        <p id="sayi2"></p>
+        <h5>+</h5>
+        <input type="number" id="tahmin" />
+        <hr />
+        <input id="sonuc" type="number" disabled/>
+        <input class="buton" type="button" onclick="hesapla()" value="Onayla" />
+    </div>
+
+    <script>
+        var sayi1Element = document.getElementById("sayi1");
+        var sayi2Element = document.getElementById("sayi2");
+        var sonucElement = document.getElementById("sonuc");
+        var tahminElement = document.getElementById("tahmin");
+
+        var rasgele1 = Math.floor(Math.random() * 10);
+        var rasgele2 = Math.floor(Math.random() * 10);
+
+        sayi1Element.innerHTML = rasgele1;
+        sayi2Element.innerHTML = rasgele2;
+
+        function hesapla() {
+            var tahmin = tahminElement.value;
+            var sonuc = rasgele2 + rasgele1;
+            sonucElement.value = sonuc;
+            if (sonuc == tahmin) {
+                alert("Tebrikler doğru girdiniz");
+            } else {
+                alert("Üzgünüm yanlış girdiniz")
+            }
+        }
+    </script>
+</body>
+
+</html>

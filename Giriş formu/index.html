@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Java Script</title>
+    <style>
+        .input-panel {
+            background-color: rgb(99, 0, 21);
+            width: 300px;
+            height: 200px;
+            margin: auto;
+            color: cornsilk;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        input {
+            margin-top: 20px;
+        }
+        
+        input[type="button"]:hover {
+            width: 100%;
+            background-color: rgb(92, 49, 49);
+            transition: 1s;
+            color: white;
+        }
+        
+        #pasta-img {
+            width: 100px;
+            height: 100px;
+        }
+        
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="input-panel">
+        <div class="text">Adınız : <input id="ad" type="text" /></div>
+        <div class="text">Soyadınız : <input id="soyad" type="text" /></div>
+        <div class="text">Yaşınız : <input id="yas" type="number" /><br /></div>
+        <input type="button" value="Bakınız" onclick="yas_hesapla()" />
+    </div>
+    <div id="pasta-panel"></div>
+
+    <script>
+        function yas_hesapla() {
+            var ad = document.getElementById("ad").value;
+            var soyad = document.getElementById("soyad").value;
+            var yas = Number(document.getElementById("yas").value);
+            if (ad + soyad) {
+                alert("Merhaba" + " " + ad + " " + soyad);
+                if (yas >= 0 && yas <= 2) {
+                    alert("Bebeksiniz Yaşınız uygun değil");
+                } else if (yas >= 3 && yas <= 18) {
+                    alert("Çocuksunuz Yaşınız uygun");
+                } else if (yas >= 19 && yas <= 30) {
+                    alert("Gençsiniz Yaşınız uygun");
+                } else if (yas >= 31 && yas <= 49) {
+                    alert("Yaşlanıyorsunuz (Aman Dikkat) Yaşınız uygun");
+                } else if (yas >= 50 && yas <= 110) {
+                    alert("Bir ayağınız Çukurda Yaşınız uygun");
+                } else if (yas >= 110) {
+                    alert("Allah Rahmet Eylesin Yaşınız uygundu");
+                }
+            } else {
+                alert("Giriş yapamadınız Üzgünüm");
+            }
+            var pasta_panel = document.getElementById("pasta-panel");
+            for (i = 1; i <= yas; i++) {
+                pasta_panel.innerHTML += '<img src="pasta.png">';
+            }
+        }
+    </script>
+</body>
+
+</html>

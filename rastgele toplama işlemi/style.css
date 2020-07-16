@@ -1,0 +1,29 @@
+body {
+    background-color: rosybrown;
+}
+
+.p-panel {
+    font-size: 30px;
+    width: 90px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+h5 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    line-height: 0px;
+    margin-right: 70px;
+}
+
+#sonuc {
+    width: 80px;
+}
+
+.buton {
+    width: 85px;
+}
+
+#tahmin {
+    width: 80px;
+}

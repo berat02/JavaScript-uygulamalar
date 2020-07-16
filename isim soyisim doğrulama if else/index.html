@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Java Script</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="input-panel">
+    <h3>Adınız</h3>
+    <input id="isim" type="text" >
+    <h3>Soyadınız</h3>
+    <input  id="soyisim" type="text">
+    <p>
+    <input type="button" onclick="uygulama()" value="Giriş Yapınız">
+</div>
+
+
+    <script>
+        function uygulama(){
+        var ad = document.getElementById("isim").value ;
+        var soyad = document.getElementById("soyisim").value ;
+        if(ad =="Berat" && soyad == "Yıldırım"){
+            alert("Tebrikler İsminiz Onaylandı");
+        }
+        else{
+            alert("Üzgünüm İsminiz Onaylanmadı");
+        }
+    }
+    </script>
+</body>
+</html>
