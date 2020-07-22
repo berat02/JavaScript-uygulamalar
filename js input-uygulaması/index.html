@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Java Script</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="paneller">
+        <div class="panel">
+            <div class="header">Resim Boyutlandırma</div>
+            <div class="input-panel">
+                <input id="img-genislik" type="number" placeholder="Genişlik Giriniz Max(250)">
+                <input id="img-yukseklik" type="number" placeholder="Yükseklik Giriniz Max(300)">
+                <input id="img" type="text">
+                <button type="button" onclick="boyutlandır()">Oluştur</button>
+            </div>
+            <div class="sub-panel">
+                <div id="img-panel"></div>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="header">Daire Oluşturma</div>
+            <div class="input-panel">
+                <input id="genislik" type="number" placeholder="Genişlik Giriniz Max(250)">
+                <input id="yukseklik" type="number" placeholder="Yükseklik Giriniz Max(250)">
+                <input id="renk" type="text" placeholder="Renk Giriniz">
+                <button type="button" onclick="olustur()">Oluştur</button>
+            </div>
+            <div class="sub-panel">
+                <p id="daire"></p>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="header">Yazı Rengi Değiştirme</div>
+            <div class="input-panel">
+                <input id="text1" type="text" placeholder="Yazının Rengini Giriniz">
+                <input id="text2" type="text" placeholder="Yazının stilini Giriniz">
+                <input id="text3" type="text" placeholder="Yazının Arka Plan Rengini Giriniz">
+                <input id="text4" type="text" placeholder="Yazının boyutunu Giriniz">
+                <button type="button" onclick="degistir()">Oluştur</button>
+            </div>
+            <div class="sub-panel">
+                <div class="texts">
+                    <div id="yazi1">1) Web Tasarım</div>
+                    <div id="yazi2">2) Grafik Tasarım</div>
+                    <div id="yazi3">3) Veri Tabanı</div>
+                    <div id="yazi4">4) Teknik Servisi</div>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="header">Hesap Makinesi</div>
+            <div class="input-panel">
+                <input id="deger1" type="number" placeholder="1. Değeri Giriniz">
+                <input id="deger2" type="number" placeholder="2. Değeri Giriniz">
+                <div class="btn">
+                    <input id="btn-topla" type="button" onclick="topla()" value="+">
+                    <input id="btn-cıkar" type="button" onclick="cıkar()" value="-">
+                    <input id="btn-carp" type="button" onclick="carp()" value="x">
+                    <input id="btn-bol" type="button" onclick="bol()" value="/">
+                </div>
+            </div>
+            <div class="sub-panel">
+                <input id="sonuc" type="number" disabled>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

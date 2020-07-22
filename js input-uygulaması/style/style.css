@@ -1,0 +1,121 @@
+body {
+    background-color: white;
+}
+
+.paneller {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px auto;
+    width: 95%;
+    height: 600px;
+}
+
+.panel {
+    border: 10px double white;
+    width: 280px;
+    height: 95%;
+    background-color: brown;
+}
+
+.input-panel {
+    width: 280px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+input {
+    width: 250px;
+    height: 25px;
+    margin-top: 10px;
+}
+
+button:hover {
+    transition: 1s;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.sub-panel {
+    border: 4px double black;
+    margin: 10px auto;
+    background-color: white;
+    width: 250px;
+    height: 310px;
+}
+
+#img-panel {
+    max-width: 250px;
+    max-height: 300px;
+}
+
+.header {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+#daire {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 220px;
+}
+
+.texts {
+    line-height: 50px;
+    font-size: 25px;
+}
+
+#btn-topla {
+    width: 60px;
+    cursor: pointer;
+}
+
+#btn-topla:hover {
+    transition: 1s;
+    background-color: black;
+    color: white;
+}
+
+#btn-cıkar {
+    width: 60px;
+    cursor: pointer;
+}
+
+#btn-cıkar:hover {
+    transition: 1s;
+    background-color: black;
+    color: white;
+}
+
+#btn-carp {
+    width: 60px;
+    cursor: pointer;
+}
+
+#btn-carp:hover {
+    transition: 1s;
+    background-color: black;
+    color: white;
+}
+
+#btn-bol {
+    width: 60px;
+    cursor: pointer;
+}
+
+#btn-bol:hover {
+    transition: 1s;
+    background-color: black;
+    color: white;
+}
+
+#sonuc {
+    width: 100px;
+    border: 0px;
+}
